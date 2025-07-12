@@ -47,3 +47,43 @@ document.querySelectorAll('.toggle-btn').forEach((button) => {
   });
 });
 
+
+//contact
+
+document.addEventListener("DOMContentLoaded", function(){
+  const form = document.querySelector("form");
+  const name_input = document.getElementById("name");
+  const email_input = document.getElementById("email");
+  const subject_input = document.getElementById("subject");
+  const message = document.getElementById("msg");
+
+  form/this.addEventListener("submit", function(){
+    let is_valid = true;
+    let message_err = [];
+
+    if (name_input.value.trim() === ""){
+      is_valid = false;
+      message_err.push("You have to enter your name!")
+    }
+    if (email_input.value.trim() === ""){
+      is_valid = false;
+      message_err.push("You have to enter your valid email correctly!");
+    }
+    if (subject_input.value.trim() === ""){
+      is_valid = false;
+      message_err.push("You have to write your subject's name!");
+    }
+    if (message.value.trim() === ""){
+      is_valid = false;
+      message_err.push("Please, write your message here!");
+    }
+
+    if (!is_valid){
+      e.preventDefault();
+      alert(message_err.join("\n"));
+    } else{
+      alert("Congratulations! Your message sent succesfully! Thank you!");
+      form.reset();
+    }
+  })
+});
