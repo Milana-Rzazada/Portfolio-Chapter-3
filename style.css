@@ -220,6 +220,21 @@ position: relative;
   z-index: 999;
 }
 
+.typed-container {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .typed-cursor {
+      color: #00ffcc;
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
 .home{
   min-height: 100vh;
   display: flex;
@@ -459,6 +474,9 @@ header {
 #fact {
   padding: 50px 30px;
   background-color: white;
+  max-width: 100%;
+  width: 1190px;
+  height: auto;
 }
 #fact .fact-row {
   display: grid;
@@ -507,6 +525,9 @@ header {
 }
 #skill {
   padding: 70px 30px;
+  max-width: 100%;
+  width: 1190px;
+  height: auto;
 }
 #skill .skill-row {
   margin-top: 35px;
@@ -551,6 +572,9 @@ header {
 #resume {
   padding: 70px 30px;
   background-color: white;
+  max-width: 100%;
+  width: 1190px;
+  height: auto;
 }
 #resume .resume-row {
   display: flex;
@@ -686,8 +710,12 @@ header {
     flex-basis: 100%;
   }
 }
+
 #contact {
   padding: 70px 30px;
+  max-width: 100%;
+  width: 1190px;
+  height: auto;
 }
 #contact .contact-row {
   margin-top: 50px;
@@ -788,6 +816,9 @@ header {
 #my-projects {
   padding: 70px 30px;
   background-color: white;
+  max-width: 100%;
+  width: 1190px;
+  height: auto;
 }
 .gallery-title {
   text-align: center;
