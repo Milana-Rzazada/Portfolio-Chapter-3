@@ -1,3 +1,18 @@
+let MenuBtn = document.getElementById("MenuBtn");
+
+MenuBtn.addEventListener('click', function(e){
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    this.classList.toggle('fa-xmark');
+})
+
+let typed = new Typed('.auto-input',{
+    strings: ['Mathematics teacher.', 'Web Developer.', 'Front-end Developer.'],
+    typedSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true,
+})
+
 const words = new Typed('#words', {
       strings: [
         "Hello, I'm Milana. I'm a Front-End developer and Web Developer.",

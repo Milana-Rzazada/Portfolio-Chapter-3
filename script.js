@@ -1,17 +1,4 @@
-let MenuBtn = document.getElementById("MenuBtn");
 
-MenuBtn.addEventListener('click', function(e){
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    this.classList.toggle('fa-xmark');
-})
-
-let typed = new Typed('.auto-input',{
-    strings: ['Mathematics teacher.', 'Web Developer.', 'Front-end Developer.'],
-    typedSpeed: 100,
-    backSpeed: 100,
-    backDelay: 2000,
-    loop: true,
-})
 
 
 let navLinks = document.querySelectorAll('nav ul li a');
@@ -43,6 +30,7 @@ document.querySelectorAll('.toggle-btn').forEach((button) => {
     } else {
       details.style.display = 'block';
       this.textContent = 'Hide Details';
+
     }
   });
 });
